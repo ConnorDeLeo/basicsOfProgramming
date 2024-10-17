@@ -90,5 +90,55 @@ userIn = input() # userIn equals what the user types
 print(userIn) # outputs 1234 to the console
 ```
 
+## Control Structure
+Don't read this quite yet, jump over to the `/assignments` directory!
+
+### Conditional Symbols
+Conditional symbols (operators) are the basics of control (think equal to, this or that, this and that, greater than, etc.). In a majority of languages, these operators are often displayed by two character symbols, but Python likes to be different and mix that with some words too! Heres a list of the basic ones, for a majority of projects you won't need to go past these (and they can be used to work around the other operators):
+```python
+or # this condition is true OR that condition is true
+and # this condition is true AND that condition is true
+not # this condition is NOT true
+
+== # these variables are EQUAL
+!= # these variables are NOT EQUAL
+< # this variable is less than that variable
+<= # this variable is less than or equal to that variable
+> # this variable is greater than that variable
+>= # this variable is less than that variable
+```
+
+### If/Else Statements
+If statements control if an action will take place. They work how you would expect, "If this, then do this". Else statements allow you to do something if the first condition is false, "If this, then do this, if not, then do this". After the statement is enacted, the code continues down as normal. In Python, they are denoted using `if` where an argument (also called a condition) can be added (parentheses optional) that is ultimately a true/false statement (such as asking if an integer variable is equal to 4), ended with a colon `:`. An if/else "tree" can be created using the `elif` statement, where its not any of the previous statements, but is included in another condition. Lets look at some examples with just a basic integer:
+```python
+integerOne = 1
+
+boolOne = True
+
+# if statement using parentheses because parentheses are good
+if (integerOne == 0):
+    print("integerOne is 0")
+else:
+    print("integerOne is not 0")
+
+# if else tree using the non-parenthetical notation
+if integerOne == 0:
+    print("integerOne is 0")
+elif integerOne == 1:
+    print("integerOne is 1")
+else:
+    print("integerOne is not 0 or 1")
+
+# you can also use a premade boolean value
+if boolOne:
+    print("boolOne is True")
+else:
+    print("boolOne is False")
+
+# using basic conditional opperators
+if (boolOne and (integerOne == 1)):
+    print("boolOne is True AND integerOne is EQUAL to 1")
+```
+
 ## Assignments
 Head over to the `/assignments` directory, I'll give you new ones when you need them!
